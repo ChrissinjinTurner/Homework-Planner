@@ -1,0 +1,263 @@
+body {
+    background-image: url('../images/login.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.window {
+    background-color: rgba(255, 255, 255, 0.89);
+    color: #4981A2;
+    overflow: hidden;
+    border-style: solid;
+    border-color: rgba(73, 129, 162, .87);
+    border-width: 9px;
+    height: auto;
+    max-width: 620px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
+
+.largeWindow {
+    background-color: rgba(255, 255, 255, 0.89);
+    color: #4981A2;
+    overflow: hidden;
+    border-style: solid;
+    border-color: rgba(73, 129, 162, .87);
+    border-width: 9px;
+    height:95%;
+    width: 85%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+}
+
+hr {
+    border-style: double;
+    border-color: #4981A2;
+}
+
+.window h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.window h2 {
+    text-align: center;
+    margin: 10px;
+    font-size: 35px;
+}
+
+.largeWindow h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.largeWindow h2 {
+    text-align: center;
+    margin: 10px;
+    font-size: 35px;
+}
+
+.menuWindow {
+    border-color: rgba(73, 129, 162, .87);
+    border-style: solid;
+    height: 3%;
+    width: 75%;
+}
+
+.largeWindow ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(73, 129, 162, .87);
+    color: white;
+}
+
+.largeWindow li {
+    float: left;
+}
+
+.largeWindow li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.largeWindow li a:hover {
+    background-color: #85D8F8;
+}
+
+.active {
+    background-color: #85D8F8;
+}
+
+.input {
+    margin: 10px;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+.input input {
+    margin: 5px;
+}
+
+.pass {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.overall {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.links {
+    padding-top: 10px;
+    font-size: 17px;
+    text-align: center;
+}
+
+a:link {
+    color: #4981A2;
+}
+
+a:visited {
+    color:#4981A2;
+}
+
+a:hover {
+    color: #85D8F8;
+}
+
+a:active {
+    color: #85D8F8;
+}
+
+.submitButton {
+    border : solid 4px #4981A2;
+    border-radius : 9px;
+    -moz-border-radius : 9px;
+    -webkit-box-shadow : 3px 2px 3px rgba(0,0,0,1.0);
+    -moz-box-shadow : 3px 2px 3px rgba(0,0,0,1.0);
+    box-shadow : 3px 2px 3px rgba(0,0,0,1.0);
+    font-size : 20px;
+    color : #4981A2;
+	padding : 3px 10px;
+	background-color : #ffffff;
+}
+
+.submitButton:hover {
+    color: #85D8F8;
+}
+
+.homeButtons {
+    width:75%px;
+    text-align:justify;
+    position:relative;
+    padding-left:200px;
+    padding-right:200px;
+    padding-top: 60px;
+}
+
+.homeButtons span {
+    display: inline-block;
+    width: 60px;
+}
+
+.homeButtons:after {
+    content: '';
+    display: inline-block; 
+    width: 100%;
+}
+
+.half {
+    width: 50%;
+    float: left;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #4981A2;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 2px 16px;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
